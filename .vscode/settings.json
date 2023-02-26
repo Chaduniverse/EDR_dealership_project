@@ -1,0 +1,28 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "li2283-18.members.linode.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "test_db",
+            "database": "test_db",
+            "username": "postgres",
+            "password": "CodingTemple4L.."
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "edr_movie_hw",
+            "connectString": "postgres://lcknzsce:C7e-Z5lsyiaEPbw4smyUXiWwAzvxOLKV@suleiman.db.elephantsql.com/lcknzsce"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "EDR_Dealership",
+            "connectString": "postgres://pcyoiirb:2IvXY6x8G4SBkPct6D7UE-ufG47DLEX5@raja.db.elephantsql.com/pcyoiirb"
+        }
+    ]
+}
