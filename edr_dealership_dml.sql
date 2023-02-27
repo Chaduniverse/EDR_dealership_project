@@ -16,18 +16,18 @@ INSERT INTO sales_person(
     'Williams'
 ); 
 
-INSERT INTO sales_invoice(
-    sale_date
+-- INSERT INTO sales_invoice(
+--     sale_date
     
-) VALUES (
-    '2003-16-04'
-),
-(
-    '2016-13-04'
-),
-(
-    '2026-12-04'
-);
+-- ) VALUES (
+--     '2003-16-04'
+-- ),
+-- (
+--     '2016-13-04'
+-- ),
+-- (
+--     '2026-12-04'
+-- );
 
 INSERT INTO customer (
     first_name,
@@ -93,19 +93,43 @@ INSERT INTO car (
     );
 
 
-INSERT INTO service_ticket(
-    date_of_service,
-    service_done
+-- INSERT INTO service_ticket(
+--     date_of_service,
+--     service_done
+-- ) VALUES (
+--     '2023-01-01', 
+--     'Oil change and filter'),
+--     ('2013-01-01', 
+--     'Tires changed and rotated'),
+--     ('2023-02-02', 'Engine tune-up'
+-- );
+
+INSERT INTO sales_invoice(
+    sale_date,
+    sales_person_id,
+    car_id,
+    customer_id
 ) VALUES (
-    '2023-01-01', 
-    'Oil change and filter'),
-    ('2013-01-01', 
-    'Tires changed and rotated'),
-    ('2023-02-02', 'Engine tune-up'
+    '2003-16-04',
+    1,
+    1,
+    2
+),
+(
+    '2016-13-04',
+    2,
+    2,
+    3
+),
+(
+    '2026-12-04',
+    3,
+    3,
+    1
 );
 
-
-
+ALTER TABLE sales_invoice 
+ALTER COLUMN sale_date set data type VARCHAR(50)
 
 
 

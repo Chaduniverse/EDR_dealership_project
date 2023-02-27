@@ -55,4 +55,7 @@ CREATE TABLE service_ticket (
 );
  
 ALTER TABLE sales_invoice 
-ALTER COLUMN sale_date SET  data type VARCHAR(50);
+ALTER COLUMN sale_date SET  data type VARCHAR(50);  
+
+DROP TABLE sales_invoice;  
+DROP TABLE service_ticket;
